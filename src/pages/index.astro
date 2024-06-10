@@ -1,0 +1,31 @@
+---
+import MainStartDots from '../components/MainStartDots.jsx';
+---
+
+<html lang="kr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>테스트</title>
+		<style>
+			.main-box {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background-color: #f0f0f0;
+			}
+			.entrance-text {
+				cursor: grab;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="main-box">
+			<MainStartDots client:visible/>
+		</div>
+	</body>
+</html>
